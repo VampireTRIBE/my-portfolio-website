@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon" />
+    <title>Portfolio - Shaikh Amir Hussain</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-head">
+          <a href="#home">
+            <img src="./assets/images/logo.png" alt="Logo" />
+          </a>
+          <h1>Amir Hussain</h1>
+        </div>
+        <div class="nav-options">
+          <a class="button" nOtion="1" href="#aboutme" hidden>About Me</a>
+          <a class="button" nOtion="2" href="#skills" hidden>Skills</a>
+          <a class="button" nOtion="2" href="#projects" hidden>Projects</a>
+          <a class="button" href="#education" hidden>Education</a>
+          <a class="button" href="#footer" hidden>Contect Me</a>
+        </div>
+        <div class="nav-menu">
+          <label for="nav-menu-options">
+            <img src="./assets/images/menu.png" alt="Icon" />
+          </label>
+          <input type="checkbox" id="nav-menu-options" hidden />
+        </div>
+      </nav>
+      <div class="nav-options-togle">
+        <a nOtion="1" href="#aboutme">About Me</a>
+        <a nOtion="2" href="#skills">Skills</a>
+        <a nOtion="2" href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#footer">Contect Me</a>
+      </div>
+    </header>
+    <main class="main">
+      <section class="home" id="home">
+        <div class="h-content">
+          <div class="h-c-text">
+            <h2>Hi, I am Shaikh Amir Hussain</h2>
+            <h4>MERN STACK DVELOPER</h4>
+          </div>
+          <div class="h-c-links">
+            <a href="https://github.com/VampireTRIBE"
+              ><img src="./assets/images/github.png" alt=""
+            /></a>
+            <a href="https://www.linkedin.com/in/shaikh-amir-hussain/"
+              ><img src="./assets/images/linkdin.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </section>
+      <section class="aboutme" id="aboutme">
+        <h2 class="a-div">ABOUT ME</h2>
+        <p class="a-div">
+          I am Shaikh Amir Hussain, a Full Stack MERN Developer and Computer
+          Science graduate from Jamia Hamdard University. I specialize in
+          building responsive web applications using MongoDB, Express.js,
+          React.js, and Node.js, with a strong emphasis on clean code
+          architecture, user authentication, and seamless database integration.
+        </p>
+        <p class="a-div">
+          My core skills include modern frontend development with HTML5, CSS3,
+          JavaScript (ES6+), and React.js (Hooks, Context API), as well as
+          backend API design and server-side logic using Node.js and Express.js.
+          I have practical experience managing databases in MongoDB,
+          implementing CRUD functionality, and optimizing performance for
+          dynamic applications.
+        </p>
+        <p class="a-div">
+          Among my projects, Adventure Express stands out as an Airbnb-inspired
+          platform featuring secure user authentication with Passport.js,
+          dynamic itinerary planning, and a fully responsive UI. Additionally,
+          I’ve developed interactive games like Simon Game and Tic-Tac-Toe,
+          demonstrating my proficiency in complex algorithms and interactive
+          interface design.
+        </p>
+        <p class="a-div">
+          Beyond coding, I enjoy motorcycle adventures and cultural explorations
+          that fuel my creativity and adaptability. I’m passionate about
+          leveraging technology to solve real-world problems and thrive in
+          collaborative environments that encourage continuous learning and
+          innovation.
+        </p>
+        <a href="#projects"><pre>|   EXPLORE   |</pre></a>
+      </section>
+      <section class="skills" id="skills">
+        <h2 class="a-div">SKILLS</h2>
+        <div>
+          <div class="s-frontend">
+            <h3>&#8594; Frontend</h3>
+            <div>
+              <img src="./assets/images/htmlcssjs.png" />
+              <img src="./assets/images/react.png" />
+              <img src="./assets/images/bootstrap.png" />
+            </div>
+          </div>
+
+          <div class="s-backend">
+            <h3>&#8594; Backend</h3>
+            <div>
+              <img src="./assets/images/node.png" />
+              <img src="./assets/images/express.png" />
+              <img src="./assets/images/api.png" />
+              <img src="./assets/images/middleware.png" />
+            </div>
+          </div>
+
+          <div class="s-database">
+            <h3>&#8594; Database & Tools</h3>
+            <div>
+              <img src="./assets/images/mongodb.png" />
+              <img src="./assets/images/git.png" />
+              <img src="./assets/images/postman.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div>
+          <h2 class="a-div">Projects</h2>
+          <div>
+            <div>
+              <h3>&#8594; Title : Adventure Express</h3>
+              <div class="p-links">
+                <a href="https://adventureexpress.onrender.com/listings"><h3>Demo Link</h3></a>
+                <a href="https://github.com/VampireTRIBE/AdventureExpress"><h3>GitHub Link</h3></a>
+              </div>
+              <div>
+                <h3>
+                  Tech Stack : Node.js, Express.js, MongoDB, EJS, Passport.js,
+                  CSS3, JavaScript
+                </h3>
+                <div>
+                  <p>
+                    Implemented secure login/registration system using
+                    Passport.js with data validation
+                  </p>
+                  <p>
+                    Designed RESTful API architecture with CRUD operations for
+                    seamless data management
+                  </p>
+                  <p>
+                    Integrated MongoDB for efficient storage of user profiles,
+                    Listing data, and application configurations
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3>&#8594; Title : Simon Game</h3>
+              <div class="p-links">
+                <a href="https://vampiretribe.github.io/simon-game/"><h3>Demo Link</h3></a>
+                <a href="https://github.com/VampireTRIBE/simon-game"><h3>GitHub Link</h3></a>
+              </div>
+              <div>
+                <h3>
+                  Tech Stack : HTML5, CSS3, JavaScript (ES6+), DOM Manipulation
+                </h3>
+                <div>
+                  <p>
+                    Built classic Simon memory game with progressive difficulty
+                    levels and score tracking
+                  </p>
+                  <p>
+                    Implemented advanced game logic with random sequence
+                    generation and pattern validation
+                  </p>
+                  <p>
+                    Applied event-driven programming principles for seamless
+                    user interactions
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3>&#8594; Title : Tic-Tac-Toe Game</h3>
+              <div class="p-links">
+                <a href="https://vampiretribe.github.io/tik-tok-game/"><h3>Demo Link</h3></a>
+                <a href="https://github.com/VampireTRIBE/tik-tok-game"><h3>GitHub Link</h3></a>
+              </div>
+              <div>
+                <h3>
+                  Tech Stack : HTML5, CSS3, JavaScript, Game Logic
+                  Implementation
+                </h3>
+                <div>
+                  <p>
+                    Developed interactive two-player game with intelligent win
+                    detection algorithms
+                  </p>
+                  <p>
+                    Implemented game state management and turn-based logic using
+                    JavaScript
+                  </p>
+                  <p>
+                    Created intuitive user interface with CSS Grid for optimal
+                    game board layout
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="education" id="education">
+        <h2 class="a-div">EDUCATION</h2>
+        <div>
+          <div>
+            <h3>BTECH Computer Science</h3>
+            <h3>Jamia Hamdard University</h3>
+            <h3>New Delhi</h3>
+            <h3>CGPA: 7.6/10 | 2021 – 2025</h3>
+          </div>
+
+          <div>
+            <h3>Data Structures & Algorithms</h3>
+            <h3>Coding Blocks</h3>
+            <h3>Feb 2024 - Oct 2024</h3>
+            <p>
+              Enroll NO : <strong style="color: black"> LPND240015 </strong>
+            </p>
+            <p>
+              Comprehensive training in algorithmic problem-solving and
+              optimization techniques
+            </p>
+            <p>
+              Advanced concepts in data structures, time/space complexity
+              analysis
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <h3>Contect Me</h3>
+      <div class="f-links">
+        <a href="https://www.linkedin.com/in/shaikh-amir-hussain/">Linkdin</a>
+        <a href="https://github.com/VampireTRIBE">GitHub</a>
+        <a>Email : amirsheikhvia@gmail.com</a>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
