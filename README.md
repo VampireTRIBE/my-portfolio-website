@@ -6,7 +6,7 @@ The website is responsive, interactive, and designed for a smooth user experienc
 ---
 
 ## 🚀 Live Demo  
-🔗 **Portfolio Link:** [Visit Portfolio](https://vampiretribe.github.io/Portfolio/) *(replace with your actual link)*  
+🔗 **Portfolio Link:** [Visit Portfolio](https://vampiretribe.github.io/my-portfolio-website/))
 
 
 ## 🧩 Features  
