@@ -52,6 +52,7 @@ p {
 .header > .navbar .nav-head h1 {
   font-size: 1.8rem;
   white-space: nowrap;
+  color: #ffffff;
 }
 
 .header > .nav-options-togle {
