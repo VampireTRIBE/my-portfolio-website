@@ -12,6 +12,7 @@ body {
 /* NAVBAR */
 
 .navbar {
+  width: 100%;
   height: var(--header-height);
   padding: var(--space-1) var(--container-padding);
   position: sticky;
@@ -28,8 +29,8 @@ body {
 
 .navbar figure {
   padding: var(--space-1);
-  width: fit-content;
   height: 100%;
+  aspect-ratio: 1/1;
   border-radius: var(--radius-sm);
   background: var(--gradient-primary);
 }
