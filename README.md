@@ -43,9 +43,14 @@ Portfolio/
 │   │   ├── photo.jpg
 │   │   ├── react.png
 │   │   └── ...
-│
+│   │
+│   ├── css/
+│       ├── base.css/
+│       ├── components.css/
+│       ├── design-tokens.css/
+│       ├── layout.css/
+│   
 ├── index.html
-├── style.css
 ├── app.js
 └── README.md
 ```
@@ -58,24 +63,14 @@ Portfolio/
 
 | Device | Screen Width | Behavior |
 |---------|---------------|-----------|
-| 📱 Mobile | `< 600px` | Collapsible navigation |
-| 💻 Tablet | `600px – 1030px` | Partial navigation visible |
-| 🖥️ Desktop | `> 1030px` | Full navigation |
-| 🖥️ Wide Screen | `> 1440px` | Centered layout |
+| 📱 Mobile | `< 576px - 767px` | Collapsible navigation |
+| 💻 Tablet | `768px – 992px` | Partial navigation visible |
+| 🖥️ Desktop | `> 992px` | Full navigation |
+| 🖥️ Wide Screen | `> 1200px` | Centered layout |
 
 ---
 
 ## 💻 JavaScript Functionality  
-
-The navigation menu toggle logic:
-
-```js
-const navMenuCheckbox = document.querySelector("#nav-menu-options");
-const navToggle = document.querySelector(".nav-options-togle");
-
-navMenuCheckbox.addEventListener("change", () => {
-  navToggle.style.right = navMenuCheckbox.checked ? "0px" : "-500px";
-});
 
 ## 🧾 Sections Overview  
 

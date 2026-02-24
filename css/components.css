@@ -1,0 +1,710 @@
+/* Common Properties*/
+.display-flex {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+body {
+  position: relative;
+}
+
+/* NAVBAR */
+
+.navbar {
+  height: var(--header-height);
+  padding: var(--space-1) var(--container-padding);
+  position: sticky;
+  top: 0;
+  white-space: nowrap;
+  background: var(--bg-section);
+  border-bottom: var(--border-width-lg) solid var(--border-light);
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  box-shadow: var(--shadow-md);
+  z-index: var(--z-navbar);
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.navbar figure {
+  padding: var(--space-1);
+  width: fit-content;
+  height: 100%;
+  border-radius: var(--radius-sm);
+  background: var(--gradient-primary);
+}
+
+.navbar figure img {
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+.navbar .nav-brand {
+  width: fit-content;
+  justify-content: start;
+  gap: var(--space-2);
+}
+
+.navbar .nav-brand h1 {
+  font-size: var(--text-2xl);
+  font-weight: var(--fw-medium);
+  font-weight: var(--fw-bold);
+  background: var(--gradient-primary);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar .nav-menu label figure {
+  cursor: pointer;
+}
+
+.navbar .nav-toggle {
+  height: 0px;
+  overflow: hidden;
+  position: absolute;
+  right: var(--container-padding);
+  top: var(--header-height);
+  flex-direction: column;
+  border-top: none;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  background-color: var(--bg-card);
+  transition: height var(--transition-normal);
+}
+
+.navbar .nav-toggle a {
+  padding: var(--space-2) var(--space-4);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-bottom: var(--border-width-sm) solid var(--border-accent);
+  background: var(--gradient-button) no-repeat left;
+  background-size: 0% 100%;
+  transition: background-size var(--transition-fast);
+}
+
+.navbar > .nav-options {
+  flex: 1;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.navbar > .nav-options .button {
+  padding: 8px 12px;
+  font-size: var(--text-base);
+  display: none;
+  justify-content: center;
+  align-content: center;
+  border: var(--border-width-sm) solid var(--border-accent);
+  border-radius: var(--radius-md);
+  background: var(--gradient-button) no-repeat left;
+  background-size: 0% 100%;
+  transition: background-size var(--transition-fast);
+}
+
+.navbar .nav-toggle a:hover,
+.navbar > .nav-options .button:hover {
+  color: var(--border-light);
+  background-size: 100% 100%;
+}
+
+@keyframes slide-Down {
+  0% {
+    height: 0px;
+  }
+  25% {
+    height: 35%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.navbar .nav-toggle a:last-child {
+  border: none;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+}
+
+#nav-menu-options:checked ~ .nav-toggle {
+  border: var(--border-width-md) solid var(--border-accent);
+  border-top: none;
+  animation: slide-Down var(--transition-normal);
+  height: fit-content;
+}
+
+.navbar .page-theme label figure {
+  cursor: pointer;
+}
+
+/* main - home*/
+
+.main > .home {
+  min-height: calc(100vh - var(--header-height));
+  padding: var(--header-height) var(--container-padding) var(--space-6);
+  background: url(../assets/images/photo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+
+.main > .home .container {
+  height: fit-content;
+  padding: var(--space-8) var(--space-5);
+  background-color: var(--bg-card);
+  border: var(--border-width-md) solid var(--border-light);
+  box-shadow: var(--shadow-md);
+  border-radius: 0 40% 0 0;
+  justify-content: space-between;
+  gap: var(--space-5);
+  opacity: 0.8;
+}
+
+.main > .home .container > div {
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.main > .home .container > .home-text {
+  justify-content: flex-start;
+  gap: var(--space-1);
+}
+
+.main > .home .container > .home-text h2 span {
+  background: var(--gradient-primary);
+  background-clip: text;
+  color: transparent;
+}
+
+.main > .home .container > .home-text h4 {
+  background: var(--gradient-primary);
+  background-clip: text;
+  color: transparent;
+}
+
+.main > .home .container > .home-links {
+  padding: var(--space-4) var(--space-1);
+  gap: var(--space-2);
+}
+
+.main > .home .container > .home-links a {
+  padding: var(--space-1);
+  border-radius: var(--radius-sm);
+  background: var(--gradient-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all var(--transition-fast);
+}
+
+.main > .home .container > .home-links a:hover {
+  transform: translateY(-2px) scale(1.01);
+}
+
+.main > .home .container > .home-links a img {
+  height: var(--space-5);
+  aspect-ratio: 1/1;
+}
+
+.main > .aboutme,
+.main > .skills,
+.main > .projects,
+.main > .Education-timeline {
+  min-height: 100vh;
+  padding: var(--header-height) var(--container-padding) var(--space-6);
+  background: var(--bg-section);
+  position: relative;
+}
+
+.main .section-title {
+  padding: var(--space-1);
+  margin-bottom: var(--space-3);
+  position: sticky;
+  top: var(--header-height);
+  border-top: var(--border-width-md) solid var(--border-light);
+  border-bottom: var(--border-width-md) solid var(--border-light);
+  background: var(--bg-card);
+  z-index: 5;
+}
+
+.main .section-title > h2 {
+  text-align: center;
+  font-size: var(--text-lg);
+  color: transparent;
+  background: var(--gradient-primary);
+  background-clip: text;
+}
+
+.main > .aboutme .a-div {
+  margin-bottom: var(--space-4);
+  padding: var(--space-2) var(--space-3);
+  border: var(--border-width-sm) solid var(--border-light);
+  border-radius: var(--radius-lg);
+  background-color: var(--bg-card);
+  transition: transform box-shadow var(--transition-fast);
+}
+
+.main > .aboutme .a-div:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.main > .aboutme a {
+  margin-top: var(--space-4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--gradient-primary);
+  background: var(--gradient-primary);
+  cursor: auto;
+}
+
+.main > .aboutme a pre {
+  text-align: center;
+  width: 50%;
+  min-width: fit-content;
+  background: var(--bg-section);
+  cursor: pointer;
+}
+
+main > .section-seprater {
+  margin: var(--space-4) var(--container-padding);
+  padding: 1px;
+  border: var(--border-width-sm) double var(--border-light);
+}
+
+.main > .skills .stack-balance {
+  padding: var(--space-2) var(--space-3);
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--space-5);
+}
+
+.main > .skills .stack-balance h2 {
+  margin-bottom: var(--space-2);
+  color: var(--text-primary);
+  font-size: var(--text-xl);
+}
+
+.main > .skills .stack-balance .sb-chart {
+  flex: 1;
+  padding: var(--space-3) 0;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+}
+
+.main > .skills .stack-balance .sb-chart h3 {
+  background: var(--gradient-primary);
+  background-clip: text;
+  color: transparent;
+}
+
+.main > .skills .stack-balance .sb-chart p {
+  padding: var(--space-4);
+}
+
+.highlight {
+  color: var(--color-primary-dark);
+  font-size: var(--text-lg);
+}
+
+/* == radar == */
+
+.radar-wrapper {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.radar {
+  width: 60%;
+  height: auto;
+}
+
+.grid-level {
+  fill: none;
+  stroke: var(--color-accent);
+  stroke-width: 2;
+}
+
+.axis {
+  stroke: var(--color-accent);
+  stroke-width: 2;
+}
+
+.data-shape {
+  fill: var(--color-primary-light-alpha);
+  stroke: var(--color-secondary);
+  stroke-width: 2;
+}
+
+.labels span {
+  position: absolute;
+  font-size: var(--text-xs);
+  font-weight: var(--fw-medium);
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.l1 {
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.l2 {
+  top: 20%;
+  right: 15px;
+}
+.l3 {
+  bottom: 20%;
+  right: 20px;
+}
+.l4 {
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.l5 {
+  bottom: 20%;
+  left: 20px;
+}
+.l6 {
+  top: 20%;
+  left: 15px;
+}
+
+.data-point {
+  fill: var(--color-primary-dark);
+  stroke: var(--color-primary-dark);
+  stroke-width: 2.5;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.data-point:hover {
+  r: 8;
+}
+
+.tooltip {
+  position: absolute;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  padding: 6px 10px;
+  font-size: var(--text-sm);
+  border: 1px solid var(--text-primary);
+  border-radius: 4px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -120%);
+  transition: 0.15s;
+  z-index: 4;
+  white-space: nowrap;
+}
+
+.main > .skills .skill-container {
+  padding: var(--space-4) 0;
+  background: var(--bg-section);
+  flex-flow: column nowrap;
+  gap: var(--space-5);
+}
+
+.main > .skills .skill-container .skill-card {
+  min-width: 48%;
+  padding: var(--space-4);
+  background: var(--bg-card);
+  border: var(--border-width-md) solid var(--border-light);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--space-4);
+  transition: all var(--transition-normal);
+}
+
+.main > .skills .skill-container .skill-card:hover {
+  box-shadow: var(--shadow-md);
+  border: var(--border-width-md) solid var(--border-accent);
+  transform: translateY(-2px);
+}
+
+.main > .skills .skill-container .skill-card .head {
+  padding: var(--space-2) 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  white-space: nowrap;
+  border-bottom: 2px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.main > .skills .skill-container .skill-card .head h4 {
+  font-size: var(--text-base);
+  background: var(--gradient-primary);
+  color: transparent;
+  background-clip: text;
+}
+
+.main > .skills .skill-container .skill-card .head figure {
+  height: var(--space-6);
+  padding: var(--space-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-sm);
+}
+
+.main > .skills .skill-container .skill-card .head figure img {
+  height: 100%;
+  aspect-ratio: 1.2/1;
+}
+
+.main > .skills .skill-container .skill-card .head-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  white-space: nowrap;
+  font-size: var(--text-sm);
+  color: var(--text-primary);
+}
+
+.main > .skills .skill-container .skill-card .head-content .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.main > .skills .skill-container .skill-card .head-content .row .bar {
+  width: 33%;
+  height: var(--space-2);
+  border: 2px solid var(--color-secondary);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.main > .skills .skill-container .skill-card .head-content .bar span {
+  display: block;
+  height: 100%;
+  background: var(--gradient-primary);
+  border-radius: inherit;
+}
+
+.main > .skills .skill-container .skill-card .head-content .bar .span1,
+.main > .skills .skill-container .skill-card .head-content .bar .span2,
+.main > .skills .skill-container .skill-card .head-content .bar .span5,
+.main > .skills .skill-container .skill-card .head-content .bar .span6,
+.main > .skills .skill-container .skill-card .head-content .bar .span13,
+.main > .skills .skill-container .skill-card .head-content .bar .span7 {
+  width: 90%;
+}
+.main > .skills .skill-container .skill-card .head-content .bar .span3,
+.main > .skills .skill-container .skill-card .head-content .bar .span9,
+.main > .skills .skill-container .skill-card .head-content .bar .span4 {
+  width: 85%;
+}
+.main > .skills .skill-container .skill-card .head-content .bar .span8,
+.main > .skills .skill-container .skill-card .head-content .bar .span11,
+.main > .skills .skill-container .skill-card .head-content .bar .span12,
+.main > .skills .skill-container .skill-card .head-content .bar .span14,
+.main > .skills .skill-container .skill-card .head-content .bar .span16,
+.main > .skills .skill-container .skill-card .head-content .bar .span10 {
+  width: 80%;
+}
+.main > .skills .skill-container .skill-card .head-content .bar .span15 {
+  width: 75%;
+}
+
+/* Education TimeLine */
+
+.main > .Education-timeline .snake-container {
+  margin: auto;
+  width: 275px;
+  height: 760px;
+  background: var(--bg-section);
+  border-radius: var(--radius-lg);
+  position: relative;
+}
+
+.main > .Education-timeline .snake-container .snake-svg {
+  padding: 1rem;
+}
+
+.main > .Education-timeline .snake-container .snake-svg .timeline-path {
+  fill: none;
+  stroke: var(--color-primary-light-alpha);
+  stroke-width: 10;
+  stroke-linecap: round;
+}
+
+.stop1 {
+  stop-color: var(--color-primary-dark);
+}
+
+.stop2 {
+  stop-color: var(--color-primary-dark);
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.main > .Education-timeline .snake-container .card {
+  width: 85%;
+  max-height: fit-content;
+  margin: var(--space-2);
+  padding: var(--space-3);
+  border: 2px solid var(--border-light);
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  font-size: var(--text-base);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  justify-items: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.main > .Education-timeline .snake-container .card:hover {
+  background: var(--bg-hover);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.main > .Education-timeline .snake-container .card h3 {
+  font-size: var(--text-xs);
+  color: transparent;
+  background: var(--gradient-hero);
+  background-clip: text;
+  border-bottom: 1px solid var(--border-accent);
+  display: flex;
+  justify-content: space-between;
+}
+
+.main > .Education-timeline .snake-container .card h4 {
+  font-size: var(--text-xs);
+  color: transparent;
+  background: var(--text-secondary);
+  background-clip: text;
+  font-weight: none;
+}
+
+.main > .Education-timeline .snake-container .card p {
+  font-size: var(--text-sm);
+}
+
+.main > .Education-timeline .snake-container .card1 {
+  position: absolute;
+  top: 20px;
+}
+
+.main > .Education-timeline .snake-container .card2 {
+  position: absolute;
+  top: 165px;
+  right: 0;
+}
+
+.main > .Education-timeline .snake-container .card3 {
+  position: absolute;
+  top: 310px;
+}
+
+.main > .Education-timeline .snake-container .card4 {
+  position: absolute;
+  top: 315px;
+}
+
+.main > .Education-timeline .snake-container .card4 {
+  position: absolute;
+  top: 460px;
+  right: 0;
+}
+
+.main > .Education-timeline .snake-container .card5 {
+  position: absolute;
+  top: 610px;
+}
+
+.footer {
+  margin-top: var(--header-height);
+  width: 100%;
+  min-height: 50vh;
+  padding: var(--space-6) var(--container-padding);
+  background: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.footer h3 {
+  font-size: var(--text-2xl);
+  color: transparent;
+  letter-spacing: 3px;
+  background: var(--gradient-primary);
+  background-clip: text;
+}
+
+.footer p {
+  color: var(--bg-hover);
+}
+
+.footer .contect-link {
+  width: fit-content;
+  display: flex;
+  gap: var(--space-5);
+  color: var(--gradient-primary);
+}
+
+.footer .contect-link a {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.footer .contect-link a:hover figure {
+  transform: translateY(-2px) scale(1.01);
+}
+
+.footer .contect-link a figure {
+  padding: var(--space-1);
+  background: var(--gradient-primary);
+  border-radius: var(--radius-sm);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  transition: all var(--transition-fast);
+}
+
+.footer .contect-link a figure img {
+  height: var(--space-5);
+  aspect-ratio: 1/1;
+}
+
+.footer .t-c {
+  margin-top: 5rem;
+  padding: 2rem 1rem 5rem;
+  text-align: center;
+  color: var(--border-light);
+  border-top: 2px solid var(--border-light);
+}
+
+.footer .gmail span{
+  font-size: var(--text-lg);
+  background: var(--gradient-primary);
+  background-clip: text;
+  color: transparent;
+}

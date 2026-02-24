@@ -1,0 +1,202 @@
+/* == Media Queries == */
+
+@media (min-width: 576px) {
+  :root {
+    --container-padding: 15%;
+  }
+
+  .main > .aboutme .a-div {
+    margin: var(--space-7);
+    margin-bottom: var(--space-3);
+    padding: var(--space-4) var(--space-5);
+  }
+
+  .labels span {
+    font-size: var(--text-lg);
+  }
+
+  .main > .Education-timeline .snake-container {
+    width: 380px;
+    height: fit-content;
+  }
+
+  .main > .Education-timeline .snake-container .card h3 {
+    font-size: var(--text-sm);
+  }
+
+  .main > .Education-timeline .snake-container .card h4 {
+    font-size: var(--text-sm);
+  }
+
+  .main > .Education-timeline .snake-container .card p {
+    font-size: var(--text-sm);
+  }
+
+  .main > .Education-timeline .snake-container .card1 {
+    width: 250px;
+    top: 50px;
+    left: 20px;
+  }
+
+  .main > .Education-timeline .snake-container .card2 {
+    width: 250px;
+    top: 260px;
+    right: 20px;
+  }
+
+  .main > .Education-timeline .snake-container .card3 {
+    width: 250px;
+    top: 465px;
+    left: 20px;
+  }
+
+  .main > .Education-timeline .snake-container .card4 {
+    width: 270px;
+    top: 680px;
+    right: 20px;
+  }
+
+  .main > .Education-timeline .snake-container .card5 {
+    width: 250px;
+    top: 880px;
+    left: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-padding: 10%;
+    --header-height: 3.5rem;
+  }
+
+  .main > .skills .stack-balance .sb-details {
+    width: 40%;
+  }
+
+  .main > .skills .skill-container {
+    flex-flow: row wrap;
+  }
+
+  .navbar > .nav-options .button[option="1"] {
+    display: flex;
+  }
+  .navbar .nav-toggle a[option="1"] {
+    display: none;
+  }
+}
+
+@media (min-width: 850px) {
+  .navbar > .nav-options .button[option="2"] {
+    display: flex;
+  }
+  .navbar .nav-toggle a[option="2"] {
+    display: none;
+  }
+}
+
+@media (min-width: 950px) {
+  .navbar > .nav-options .button[option="3"] {
+    display: flex;
+  }
+  .navbar .nav-toggle a[option="3"] {
+    display: none;
+  }
+}
+
+@media (min-width: 1050px) {
+  .navbar > .nav-options .button[option="4"] {
+    display: flex;
+  }
+  .navbar .nav-toggle a[option="4"] {
+    display: none;
+  }
+}
+
+@media (min-width: 1150px) {
+  .navbar > .nav-options .button[option="5"] {
+    display: flex;
+  }
+  .navbar .nav-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .main > .skills .skill-container .skill-card .head h4,
+  .main > .skills .skill-container .skill-card .head-content {
+    font-size: var(--text-lg);
+  }
+
+  .main .section-title > h2 {
+    font-size: var(--text-xl);
+  }
+
+  .main > .Education-timeline .snake-container .card {
+    gap: var(--space-3);
+  }
+
+  .main > .Education-timeline .snake-container {
+    width: 500px;
+    height: fit-content;
+  }
+
+  .main > .Education-timeline .snake-container .card h3 {
+    font-size: var(--text-lg);
+  }
+
+  .main > .Education-timeline .snake-container .card h4 {
+    font-size: var(--text-lg);
+  }
+
+  .main > .Education-timeline .snake-container .card p {
+    font-size: var(--text-base);
+  }
+
+  .main > .Education-timeline .snake-container .card1 {
+    width: 350px;
+    top: 60px;
+    left: 20px;
+  }
+
+  .main > .Education-timeline .snake-container .card2 {
+    width: 350px;
+    top: 350px;
+    right: 20px;
+  }
+
+  .main > .Education-timeline .snake-container .card3 {
+    width: 350px;
+    top: 630px;
+    left: 20px;
+  }
+
+  .main > .Education-timeline .snake-container .card4 {
+    width: 370px;
+    top: 900px;
+    right: 20px;
+  }
+
+  .main > .Education-timeline .snake-container .card5 {
+    width: 350px;
+    top: 1200px;
+    left: 20px;
+  }
+  .main > .home {
+    background-image: url(../assets/images/photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    overflow-y: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --container-padding: 15%;
+  }
+
+  .main > .aboutme .a-div,
+  .main > .skills .stack-balance .sb-chart p {
+    font-size: var(--text-lg);
+  }
+}
