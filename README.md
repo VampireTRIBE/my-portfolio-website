@@ -1,108 +1,65 @@
-# 🌐 Shaikh Amir Hussain — Portfolio Website  
+# Shaikh Amir Hussain Portfolio
 
-A **personal portfolio website** built using **HTML, CSS, and JavaScript** to showcase my skills, projects, and education as a **Full Stack MERN Developer**.  
-The website is responsive, interactive, and designed for a smooth user experience across all devices.  
+A responsive personal portfolio built with plain HTML, modular CSS, and JavaScript modules. It presents Amir as a MERN full-stack developer and includes dedicated sections for profile, skills, featured projects, education, and contact.
 
----
+## Highlights
 
-## 🚀 Live Demo  
-🔗 **Portfolio Link:** [Visit Portfolio](https://vampiretribe.github.io/my-portfolio-website/))
+- Sticky responsive navigation with mobile menu behavior.
+- Light and dark theme toggle with saved preference.
+- Modular CSS split into design tokens, base styles, components, and layout.
+- Data-driven project cards rendered from `projects.module.js`.
+- Featured projects for FolioScope, H2O, and an Emaar-style property interface.
+- No framework or build step required.
 
+## Tech Stack
 
-## 🧩 Features  
+| Area | Technology |
+| --- | --- |
+| Structure | HTML5 |
+| Styling | CSS3, responsive media queries, CSS custom properties |
+| Behavior | JavaScript ES modules |
+| Assets | Local images in `assets/images` |
 
-✨ Responsive Design (Mobile, Tablet & Desktop)  
-🎨 Modern and Clean UI  
-⚡ Smooth Animations and Transitions  
-🧠 Interactive Navigation Menu  
-🧱 Project Showcase with GitHub Links  
-💬 About Me, Skills, and Education Sections  
-📞 Contact and Social Media Links  
+## Folder Structure
 
----
-
-## 🛠️ Tech Stack  
-
-| Area | Technologies |
-|------|---------------|
-| **Frontend** | HTML5, CSS3, JavaScript (ES6) |
-| **Design** | Flexbox, Media Queries, Responsive UI |
-| **Tools** | Git, GitHub, VS Code |
-| **Hosting** | GitHub Pages / Render |
-
----
-
-## 📁 Folder Structure  
-
-```bash
-Portfolio/
-│
+```text
+Portfolio_Website/
 ├── assets/
-│   ├── images/
-│   │   ├── logo.png
-│   │   ├── photo.jpg
-│   │   ├── react.png
-│   │   └── ...
-│   │
-│   ├── css/
-│       ├── base.css/
-│       ├── components.css/
-│       ├── design-tokens.css/
-│       ├── layout.css/
-│   
-├── index.html
+│   └── images/
+├── css/
+│   ├── base.css
+│   ├── components.css
+│   ├── design-tokens.css
+│   └── layout.css
 ├── app.js
+├── projects.module.js
+├── index.html
 └── README.md
 ```
 
----
+## Run Locally
 
-## ⚙️ Setup & Usage  
+Run a static server from the project root. This is recommended because the portfolio uses JavaScript modules.
 
-## 📱 Responsive Breakpoints  
+```bash
+python -m http.server 8080
+```
 
-| Device | Screen Width | Behavior |
-|---------|---------------|-----------|
-| 📱 Mobile | `< 576px - 767px` | Collapsible navigation |
-| 💻 Tablet | `768px – 992px` | Partial navigation visible |
-| 🖥️ Desktop | `> 992px` | Full navigation |
-| 🖥️ Wide Screen | `> 1200px` | Centered layout |
+Then open `http://127.0.0.1:8080/`.
 
----
+## Sections
 
-## 💻 JavaScript Functionality  
+- Home: short positioning statement, profile image, contact actions, and social links.
+- About: concise developer profile and project focus.
+- Skills: frontend, backend, data workflow, and delivery tooling.
+- Projects: filterable cards for FolioScope, H2O, and Emaar.
+- Education: learning timeline and academic background.
+- Contact: GitHub, LinkedIn, and email links.
 
-## 🧾 Sections Overview  
+## Author
 
-- 🏠 **Home:** Introduction with title and social links  
-- 🙋 **About Me:** Short bio and goals  
-- 🧠 **Skills:** Frontend, Backend, Tools  
-- 💼 **Projects:** List with GitHub and Live links  
-- 🎓 **Education:** Academic background  
-- 📬 **Contact:** Socials and email links  
+Shaikh Amir Hussain
 
----
-
-## 🧑‍💻 Author 
-
-**👤 Shaikh Amir Hussain**  
-📧 [amirsheikhvia@gmail.com](mailto:amirsheikhvia@gmail.com)  
-💼 [LinkedIn](https://www.linkedin.com/in/shaikh-amir-hussain/)  
-🐙 [GitHub](https://github.com/VampireTRIBE)  
-
----
-
-## 🪪 License  
-
-This project is open-source and available under the **MIT License**.  
-
----
-
-## ⭐ Acknowledgments  
-
-- Inspired by clean, minimalist developer portfolio designs.  
-- Built with ❤️ using **HTML, CSS, and JavaScript**.  
-
----
-
-### 🖤 If you like this project, don’t forget to ⭐ the repo!  
+- Email: [amirsheikhvia@gmail.com](mailto:amirsheikhvia@gmail.com)
+- LinkedIn: [shaikh-amir-hussain](https://www.linkedin.com/in/shaikh-amir-hussain/)
+- GitHub: [VampireTRIBE](https://github.com/VampireTRIBE)

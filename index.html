@@ -4,496 +4,259 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio of Shaikh Amir Hussain, a MERN full-stack developer building responsive web apps, dashboards, APIs, and portfolio analytics products." />
   <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon" />
   <link rel="stylesheet" href="./css/design-tokens.css" />
   <link rel="stylesheet" href="./css/base.css" />
   <link rel="stylesheet" href="./css/components.css" />
   <link rel="stylesheet" href="./css/layout.css" />
-  <title id="title">Portfolio - Shaikh Amir Hussain</title>
+  <title>Shaikh Amir Hussain | Full Stack Developer</title>
 </head>
 
 <body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Shaikh Amir Hussain home">
+      <span class="brand-mark">
+        <img src="./assets/images/logo.png" alt="" />
+      </span>
+      <span class="brand-name">Amir Hussain</span>
+    </a>
 
-  <header class="navbar display-flex">
-    
-    <div class="nav-brand display-flex">
-      <a href="#home">
-        <figure>
-          <img src="./assets/images/logo.png" alt="Logo" />
-        </figure>
-      </a>
-      <h1 class="flex-center">Amir Hussain</h1>
-    </div>
-    <nav class="nav-options display-flex">
-      <a option="1" class="button" href="#aboutme">About Me</a>
-      <a option="2" class="button" href="#skills" hidden>Skills</a>
-      <a option="3" class="button" href="#projects" hidden>Projects</a>
-      <a option="4" class="button" href="#education" hidden>Education</a>
-      <a option="5" class="button" href="#footer" hidden>Contect Me</a>
+    <input type="checkbox" id="nav-menu-options" class="visually-hidden" aria-label="Toggle navigation menu" />
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
     </nav>
 
-    <input type="checkbox" name="pageTheme" id="page-them" hidden />
-    <div class="page-theme" title="Theme Change">
-      <label for="page-them">
-        <figure>
-          <img src="./assets/images/light.png" alt="theme-Icon" />
-        </figure>
+    <div class="header-actions">
+      <input type="checkbox" name="pageTheme" id="page-theme" class="visually-hidden" />
+      <label class="icon-button theme-toggle" for="page-theme" title="Change theme" aria-label="Change theme">
+        <img src="./assets/images/light.png" alt="" />
+      </label>
+
+      <label class="icon-button menu-toggle" for="nav-menu-options" title="Menu" aria-label="Menu">
+        <img src="./assets/images/menu.png" alt="" />
       </label>
     </div>
-
-    <div class="nav-menu">
-      <label for="nav-menu-options">
-        <figure>
-          <img src="./assets/images/menu.png" alt="menu-Icon" />
-        </figure>
-      </label>
-    </div>
-    <input type="checkbox" id="nav-menu-options" hidden />
-    <div class="nav-toggle display-flex">
-      <a option="1" href="#aboutme">About Me</a>
-      <a option="2" href="#skills">Skills</a>
-      <a option="3" href="#projects">Projects</a>
-      <a option="4" href="#education">Education</a>
-      <a option="5" href="#footer">Contect Me</a>
-    </div>
-
   </header>
 
-  <main class="main">
-
-    <section class="home" id="home">
-      <div class="container display-flex">
-        <div class="home-text display-flex">
-          <h2><span>Hi,</span> I am Shaikh Amir Hussain</h2>
-          <h4>MERN FULL STACK DVELOPER</h4>
+  <main>
+    <section class="hero section-band" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">MERN Full Stack Developer</p>
+        <h1>Building useful web products with clean interfaces and dependable backend logic.</h1>
+        <p class="hero-copy">
+          I am Shaikh Amir Hussain, a Computer Science graduate focused on JavaScript, React, Node.js,
+          Express, MongoDB, and production-minded UI work.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View Projects</a>
+          <a class="button ghost" href="mailto:amirsheikhvia@gmail.com">Contact Me</a>
         </div>
-        <div class="home-links display-flex">
-          <a href="https://github.com/VampireTRIBE" target="_blank" title="GitHub">
-            <img src="./assets/images/github.png" alt="icon" /></a>
-          <a href="https://www.linkedin.com/in/shaikh-amir-hussain/" target="_blank" title="Linkedin">
-            <img src="./assets/images/linkdin.png" alt="icon" /></a>
+        <div class="social-row" aria-label="Social links">
+          <a href="https://github.com/VampireTRIBE" target="_blank" rel="noreferrer" title="GitHub">
+            <img src="./assets/images/github.png" alt="GitHub" />
+          </a>
+          <a href="https://www.linkedin.com/in/shaikh-amir-hussain/" target="_blank" rel="noreferrer"
+            title="LinkedIn">
+            <img src="./assets/images/linkdin.png" alt="LinkedIn" />
+          </a>
+        </div>
+      </div>
+      <div class="hero-panel" aria-label="Developer profile summary">
+        <img class="hero-photo" src="./assets/images/photo.jpg" alt="Shaikh Amir Hussain" />
+        <div class="hero-stats">
+          <div>
+            <strong>3</strong>
+            <span>Featured builds</span>
+          </div>
+          <div>
+            <strong>MERN</strong>
+            <span>Primary stack</span>
+          </div>
+          <div>
+            <strong>API</strong>
+            <span>Backend focus</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <div class="section-seprater"></div>
-
-    <section class="aboutme" id="aboutme">
-      <div class="section-title">
-        <h2>ABOUT ME</h2>
+    <section class="about section-band" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">About Me</p>
+        <h2>Developer with product sense, backend discipline, and a practical eye for UI.</h2>
       </div>
-      <p class="a-div">
-        I am Shaikh Amir Hussain, a Full Stack MERN Developer and Computer
-        Science graduate from Jamia Hamdard University. I specialize in
-        building responsive web applications using MongoDB, Express.js,
-        React.js, and Node.js, with a strong emphasis on clean code
-        architecture, user authentication, and seamless database integration.
-      </p>
-      <p class="a-div">
-        My core skills include modern frontend development with HTML5, CSS3,
-        JavaScript (ES6+), and React.js (Hooks, Context API), as well as
-        backend API design and server-side logic using Node.js and Express.js.
-        I have practical experience managing databases in MongoDB,
-        implementing CRUD functionality, and optimizing performance for
-        dynamic applications.
-      </p>
-      <p class="a-div">
-        Among my projects, Adventure Express stands out as an Airbnb-inspired
-        platform featuring secure user authentication with Passport.js,
-        dynamic itinerary planning, and a fully responsive UI. Additionally,
-        I’ve developed interactive games like Simon Game and Tic-Tac-Toe,
-        demonstrating my proficiency in complex algorithms and interactive
-        interface design.
-      </p>
-      <p class="a-div">
-        Beyond coding, I enjoy motorcycle adventures and cultural explorations
-        that fuel my creativity and adaptability. I’m passionate about
-        leveraging technology to solve real-world problems and thrive in
-        collaborative environments that encourage continuous learning and
-        innovation.
-      </p>
-      <a href="#projects">
-        <pre>|   EXPLORE   |</pre>
-      </a>
+      <div class="about-grid">
+        <p>
+          I build responsive web applications with JavaScript, React, Node.js, Express, and MongoDB.
+          My work usually sits where user flows, data models, authentication, dashboards, and API behavior
+          need to come together without feeling heavy.
+        </p>
+        <p>
+          Recent work includes a content-rich H2O blog experience, FolioScope portfolio analytics flows,
+          and a polished Emaar-style real estate interface. I like projects that demand both clean screens
+          and careful data handling.
+        </p>
+      </div>
     </section>
 
-    <div class="section-seprater"></div>
-
-    <section id="skills" class="skills">
-      <div class="section-title">
-        <h2>SKILLS</h2>
+    <section class="skills section-band" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>A balanced stack for frontend, backend, databases, and delivery.</h2>
       </div>
 
-      <div class="stack-balance">
-        <div class="sb-details">
-          <h2 class="sub-title">Technical Proficiency Matrix</h2>
-          <p class="data">
-            A data-driven view of my technical ecosystem, balanced between frontend interactivity and backend logic.
-          </p>
-        </div>
-        <div class="sb-chart display-flex">
-          <h3>Skill Stack</h3>
-          <div class="radar-wrapper">
-            <svg viewBox="0 0 400 400" class="radar">
-              <!-- Grid Levels -->
-              <polygon points="200,40 330,110 330,290 200,360 70,290 70,110" class="grid-level" />
-              <polygon points="200,80 300,130 300,270 200,320 100,270 100,130" class="grid-level" />
-              <polygon points="200,120 270,150 270,250 200,280 130,250 130,150" class="grid-level" />
-              <polygon points="200,160 240,170 240,230 200,240 160,230 160,170" class="grid-level" />
-
-              <!-- Axis Lines -->
-              <line x1="200" y1="200" x2="200" y2="40" class="axis" />
-              <line x1="200" y1="200" x2="330" y2="110" class="axis" />
-              <line x1="200" y1="200" x2="330" y2="290" class="axis" />
-              <line x1="200" y1="200" x2="200" y2="360" class="axis" />
-              <line x1="200" y1="200" x2="70" y2="290" class="axis" />
-              <line x1="200" y1="200" x2="70" y2="110" class="axis" />
-
-              <!-- Data Shape -->
-              <polygon points="200,60 320,118 300,271 200,300 101,269 80,118" class="data-shape" />
-              <circle cx="200" cy="60" r="6" class="data-point" data-value="90" />
-              <circle cx="320" cy="118" r="6" class="data-point" data-value="90" />
-              <circle cx="300" cy="271" r="6" class="data-point" data-value="80" />
-              <circle cx="200" cy="300" r="6" class="data-point" data-value="75" />
-              <circle cx="101" cy="269" r="6" class="data-point" data-value="80" />
-              <circle cx="80" cy="118" r="6" class="data-point" data-value="90" />
-
-            </svg>
-            <div class="tooltip" id="tooltip"></div>
-
-            <div class="labels">
-              <span class="l1" data-value="90">Backend</span>
-              <span class="l2" data-value="90">Database</span>
-              <span class="l3" data-value="80">DevOps</span>
-              <span class="l4" data-value="75">UI/UX</span>
-              <span class="l5" data-value="80">Testing</span>
-              <span class="l6" data-value="90">Frontend</span>
-            </div>
+      <div class="skills-layout">
+        <div class="skill-orbit">
+          <svg viewBox="0 0 400 400" class="radar" role="img" aria-label="Skill balance chart">
+            <polygon points="200,40 330,110 330,290 200,360 70,290 70,110" class="grid-level" />
+            <polygon points="200,80 300,130 300,270 200,320 100,270 100,130" class="grid-level" />
+            <polygon points="200,120 270,150 270,250 200,280 130,250 130,150" class="grid-level" />
+            <line x1="200" y1="200" x2="200" y2="40" class="axis" />
+            <line x1="200" y1="200" x2="330" y2="110" class="axis" />
+            <line x1="200" y1="200" x2="330" y2="290" class="axis" />
+            <line x1="200" y1="200" x2="200" y2="360" class="axis" />
+            <line x1="200" y1="200" x2="70" y2="290" class="axis" />
+            <line x1="200" y1="200" x2="70" y2="110" class="axis" />
+            <polygon points="200,58 314,116 301,270 200,305 106,268 82,118" class="data-shape" />
+          </svg>
+          <div class="orbit-labels">
+            <span>Frontend</span>
+            <span>Backend</span>
+            <span>Database</span>
+            <span>Testing</span>
+            <span>DevOps</span>
+            <span>UI</span>
           </div>
-          <p>A Well Balanced profile with a slight bias towards <span class="highlight">Frontend</span>, <span class="highlight">Backend</span>, <span class="highlight">DataBase</span> architecture.</p>
+        </div>
+
+        <div class="skill-list">
+          <article class="skill-card">
+            <img src="./assets/images/react.png" alt="" />
+            <div>
+              <h3>Frontend Engineering</h3>
+              <p>HTML, CSS, JavaScript, React, responsive layouts, accessible components.</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <img src="./assets/images/nodejs.png" alt="" />
+            <div>
+              <h3>Backend Architecture</h3>
+              <p>Node.js, Express, REST APIs, authentication, middleware, route design.</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <img src="./assets/images/settings.png" alt="" />
+            <div>
+              <h3>Data & Workflow</h3>
+              <p>MongoDB, Mongoose, SQL basics, testing flows, debugging, Git workflow.</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <img src="./assets/images/docker.png" alt="" />
+            <div>
+              <h3>Delivery Tools</h3>
+              <p>GitHub, Postman, Docker basics, deployment checks, build verification.</p>
+            </div>
+          </article>
         </div>
       </div>
-
-      <div class="skill-container display-flex">
-
-        <div class="skill-card card1">
-
-          <div class="head">
-            <figure class="">
-              <img src="./assets/images/react.png" alt="frontend">
-            </figure>
-            <h4>Frontend Engineering</h4>
-          </div>
-
-          <div class="head-content">
-            <div class="row row1">
-              <div class="text">HTML & CSS</div>
-              <div class="bar bar1"><span class="span1"></span></div>
-            </div>
-            <div class="row row2">
-              <div class="text">React & JavaScript</div>
-              <div class="bar bar2"><span class="span2"></span></div>
-            </div>
-            <div class="row row3">
-              <div class="text">Tailwind & Bootstrap</div>
-              <div class="bar bar3"><span class="span3"></span></div>
-            </div>
-            <div class="row row4">
-              <div class="text">Redux & Redux-Toolkit</div>
-              <div class="bar bar4"><span class="span4"></span></div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="skill-card card2">
-
-          <div class="head">
-            <figure class="">
-              <img src="./assets/images/nodejs.png" alt="backend">
-            </figure>
-            <h4>Backend Architecture</h4>
-          </div>
-
-          <div class="head-content">
-            <div class="row row1">
-              <div class="text">Node.js & Express</div>
-              <div class="bar bar1"><span class="span5"></span></div>
-            </div>
-            <div class="row row2">
-              <div class="text">MongoDB & Mongoose</div>
-              <div class="bar bar2"><span class="span6"></span></div>
-            </div>
-            <div class="row row3">
-              <div class="text">RESTful APIs</div>
-              <div class="bar bar3"><span class="span7"></span></div>
-            </div>
-            <div class="row row4">
-              <div class="text">SQL & mysql2</div>
-              <div class="bar bar4"><span class="span8"></span></div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="skill-card card3">
-
-          <div class="head">
-            <figure class="">
-              <img src="./assets/images/docker.png" alt="devOps">
-            </figure>
-            <h4>DevOps & Tools</h4>
-          </div>
-
-          <div class="head-content">
-            <div class="row row1">
-              <div class="text">Git/GitHub</div>
-              <div class="bar bar1"><span class="span9"></span></div>
-            </div>
-            <div class="row row2">
-              <div class="text">Postman</div>
-              <div class="bar bar2"><span class="span10"></span></div>
-            </div>
-            <div class="row row3">
-              <div class="text">Docker</div>
-              <div class="bar bar3"><span class="span11"></span></div>
-            </div>
-            <div class="row row4">
-              <div class="text">AWS EC2</div>
-              <div class="bar bar4"><span class="span12"></span></div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="skill-card card4">
-
-          <div class="head">
-            <figure class="">
-              <img src="./assets/images/settings.png" alt="Workflow">
-            </figure>
-            <h4>Workflow</h4>
-          </div>
-
-          <div class="head-content">
-            <div class="row row1">
-              <div class="text">DSA with C++</div>
-              <div class="bar bar1"><span class="span13"></span></div>
-            </div>
-            <div class="row row2">
-              <div class="text">System Design</div>
-              <div class="bar bar2"><span class="span14"></span></div>
-            </div>
-            <div class="row row3">
-              <div class="text">UI/UX Principles</div>
-              <div class="bar bar3"><span class="span15"></span></div>
-            </div>
-            <div class="row row4">
-              <div class="text">Web Designs Principles</div>
-              <div class="bar bar4"><span class="span16"></span></div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
     </section>
 
-    <div class="section-seprater"></div>
-
-    <!--
-    <section class="projects" id="projects">
-
-      <div class="section-title">
-        <h2>PROJECTS</h2>
+    <section class="projects section-band" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Featured work shaped as reusable project cards.</h2>
       </div>
 
-      <div class="section-head">
+      <div class="project-toolbar" aria-label="Project filters">
+        <button class="filter-button active" type="button" data-filter="all">All</button>
+        <button class="filter-button" type="button" data-filter="frontend">Frontend</button>
+        <button class="filter-button" type="button" data-filter="fullstack">Full Stack</button>
+        <button class="filter-button" type="button" data-filter="analytics">Analytics</button>
+      </div>
 
-        <div class="head">
-          <div>Select a category to filter the ecosystem.</div>
-          <div class="buttons"></div>
-        </div>
+      <div class="project-grid" id="project-grid" aria-live="polite"></div>
 
-        <div class="card-container">
-
-          <div class="card card1">
-
-            <figure>
-              <img src="" alt="card-image">
-            </figure>
-
-            <div class="card-description">
-              <h4>Title</h4>
-              <p>A full-featured shopping platform with Stripe payment integration, admin dashboard, and real-time inventory management.</p>
-            </div>
-
-            <div class="tech-stack">
-              <h4>Tech Stack Distribution</h4>
-              <div class="tech-chart"></div>
-            </div>
-
-            <div class="card-footer">
-              <div class="card-button">
-                <figure>
-                  <img src="" alt="icon">
-                </figure>
-                <span>Code</span>
-              </div>
-              <div class="card-button">
-                <span>Live Demo</span>
-                <figure>
-                  <img src="" alt="icon">
-                </figure>
-              </div>
-            </div>
-
+      <template id="project-card-template">
+        <article class="project-card">
+          <div class="project-topline">
+            <span class="project-kind"></span>
+            <span class="project-year"></span>
           </div>
-
-        </div>
-
-      </div>
-
-    </section>
-    -->
-
-    <!-- <div class="section-seprater"></div> -->
-
-    <section class="Education-timeline" id="education">
-
-      <div class="section-title">
-        <h2>EDUCATION TIMELINE</h2>
-      </div>
-
-      <div class="snake-container">
-
-        <svg class="snake-svg" viewBox="0 0 500 1500">
-
-          <!-- Background path -->
-          <path class="timeline-path" d="
-                M 480 20
-                L 480 260
-                A 40 40 0 0 1 440 300
-                L 60 300
-                A 40 40 0 0 0 20 340
-                L 20 560
-                A 40 40 0 0 0 60 600
-                L 440 600
-                A 40 40 0 0 1 480 640
-                L 480 860
-                A 40 40 0 0 1 440 900
-                L 60 900
-                A 40 40 0 0 0 20 940
-                L 20 1160
-                A 40 40 0 0 0 60 1200
-                L 440 1200
-                A 40 40 0 0 1 480 1240
-                L 480 1500" />
-
-          <!-- Animated progress path -->
-          <path class="progress" d="
-                M 480 1500
-                L 480 1240
-                A 40 40 0 0 0 440 1200
-                L 60 1200
-                A 40 40 0 0 1 20 1160
-                L 20 940
-                A 40 40 0 0 1 60 900
-                L 440 900
-                A 40 40 0 0 0 480 860
-                L 480 640
-                A 40 40 0 0 0 440 600
-                L 60 600
-                A 40 40 0 0 1 20 560
-                L 20 340
-                A 40 40 0 0 1 60 300
-                L 440 300
-                A 40 40 0 0 0 480 260
-                L 480 20" fill="none" stroke="url(#grad)" stroke-width="8" stroke-linecap="round" />
-
-          <defs>
-            <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop class="stop1" offset="0%" />
-              <stop class="stop2" offset="100%" />
-            </linearGradient>
-          </defs>
-        </svg>
-
-        <div class="card card1">
-          <h3 class="course-name">MERN STACK <span>Nov 2025</span></h3>
-          <h4 class="institute">JSpiders Noida</h4>
-          <p class="description">
-            Covers frontend, backend, databases, and deployment.
-          </p>
-        </div>
-
-        <div class="card card2">
-          <h3 class="course-name">BTECH CSE <span>March 2025</span></h3>
-          <h4 class="institute">Jamia Hamdard University</h4>
-          <p class="description">
-            Completed Graduation in BTech Computer Science.
-          </p>
-        </div>
-
-        <div class="card card3">
-          <h3 class="course-name">DSA with C++ <span>july 2024</span></h3>
-          <h4 class="institute">Coding Blocks</h4>
-          <p class="description">
-            Focuses on problem-solving, complexity analysis.
-          </p>
-        </div>
-
-        <div class="card card4">
-          <h3 class="course-name">Senior Secondary Education <span>2020</span></h3>
-          <h4 class="institute">Bal Bhavan International School</h4>
-          <p class="description">
-            Completed Senior Secondary Education From CBSE.
-          </p>
-        </div>
-
-        <div class="card card5">
-          <h3 class="course-name">Secondary Education <span>2018</span></h3>
-          <h4 class="institute">Bal Bhavan International School</h4>
-          <p class="description">
-            Completed Secondary Education From CBSE.
-          </p>
-        </div>
-
-      </div>
-
+          <h3></h3>
+          <p class="project-description"></p>
+          <div class="project-metrics"></div>
+          <ul class="project-tags"></ul>
+          <div class="project-actions">
+            <a class="button compact primary project-primary" target="_blank" rel="noreferrer"></a>
+            <a class="button compact ghost project-secondary" target="_blank" rel="noreferrer"></a>
+          </div>
+        </article>
+      </template>
     </section>
 
-    <div class="section-seprater"></div>
+    <section class="education section-band" id="education">
+      <div class="section-heading">
+        <p class="eyebrow">Education</p>
+        <h2>Learning path and technical foundation.</h2>
+      </div>
 
+      <div class="timeline">
+        <article class="timeline-card">
+          <span>Nov 2025</span>
+          <h3>MERN Stack</h3>
+          <p>JSpiders Noida - frontend, backend, database, APIs, and deployment practice.</p>
+        </article>
+        <article class="timeline-card">
+          <span>March 2025</span>
+          <h3>B.Tech Computer Science</h3>
+          <p>Jamia Hamdard University - computer science fundamentals and engineering coursework.</p>
+        </article>
+        <article class="timeline-card">
+          <span>July 2024</span>
+          <h3>DSA with C++</h3>
+          <p>Coding Blocks - problem solving, data structures, algorithms, and complexity analysis.</p>
+        </article>
+        <article class="timeline-card">
+          <span>2020 / 2018</span>
+          <h3>Schooling</h3>
+          <p>Bal Bhavan International School - senior secondary and secondary education.</p>
+        </article>
+      </div>
+    </section>
   </main>
 
-  <footer class="footer" id="footer">
-
-    <h3>Let's Build Something Great!</h3>
-    <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
-    <div class="contect-link">
-      <a href="https://github.com/VampireTRIBE" target="_blank">
-        <figure><img src="./assets/images/github.png" alt="icon"></figure>
-        <span>GitHub</span>
+  <footer class="footer" id="contact">
+    <p class="eyebrow">Contact</p>
+    <h2>Let's build something useful.</h2>
+    <p>
+      I am open to full-stack opportunities, frontend projects, dashboards, and products that need
+      reliable APIs behind a clean interface.
+    </p>
+    <div class="contact-links">
+      <a href="https://github.com/VampireTRIBE" target="_blank" rel="noreferrer">
+        <img src="./assets/images/github.png" alt="" />
+        GitHub
       </a>
-      <a href="https://www.linkedin.com/in/shaikh-amir-hussain/" target="_blank">
-        <figure><img src="./assets/images/linkdin.png" alt="icon"></figure>
-        <span>linkdin</span>
+      <a href="https://www.linkedin.com/in/shaikh-amir-hussain/" target="_blank" rel="noreferrer">
+        <img src="./assets/images/linkdin.png" alt="" />
+        LinkedIn
       </a>
-      <a href="mailto:amirsheikhvia@gmail.com" title="amirsheikhvia@gmail.com" target="_blank">
-        <figure><img src="./assets/images/email.png" alt="icon"></figure>
-        <span>Gmail</span>
+      <a href="mailto:amirsheikhvia@gmail.com">
+        <img src="./assets/images/email.png" alt="" />
+        Email
       </a>
     </div>
-    <p class="gmail">Email : <span>amirsheikhvia@gmail.com</span></p>
-    <div class="t-c">
-      © 2026 Shaikh Amir Hussain Portfolio. All rights reserved.
-    </div>
-
+    <small>Copyright 2026 Shaikh Amir Hussain. All rights reserved.</small>
   </footer>
 
-  <script src="app.js"></script>
+  <script type="module" src="./app.js"></script>
 </body>
 
 </html>
